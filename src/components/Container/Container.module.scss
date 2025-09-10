@@ -1,0 +1,13 @@
+@use 'src/styles/media-query' as media;
+
+.container {
+    max-width: 1440px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: calc((100vw - 1440px) / 3 * 2);
+
+    @include media.xxl {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
