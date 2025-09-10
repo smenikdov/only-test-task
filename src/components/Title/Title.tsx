@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './Title.module.scss';
 import classnames from 'classnames';
 import type { TitleProps } from './Title.types';
