@@ -1,46 +1,85 @@
-# Getting Started with Create React App
+# Тестовое задание на позицию Frontend-разработчика в компанию «Онли»
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Описание проекта
 
-## Available Scripts
+Проект представляет собой React-компонент `Timeline`, реализованный в соответствии с техническим заданием. Компонент отображает интерактивную
+временную шкалу с поддержкой 2–6 временных отрезков, каждый из которых содержит ключевые события, отображаемые в слайдере (библиотека Swiper).
 
-In the project directory, you can run:
+## Установка и запуск
 
-### `npm start`
+### Требования
+- **Node.js**: LTS (рекомендуется использовать указанную версию для стабильной работы)
+- **Пакетный менеджер**: npm
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Инструкции
+1. Склонируйте репозиторий:
+   ```bash
+   git clone https://github.com/smenikdov/only-test-task.git
+   ```
+2. Перейдите в директорию проекта:
+   ```bash
+   cd only-test-task
+   ```
+3. Установите зависимости:
+   ```bash
+   npm install
+   ```
+4. Запустите проект в режиме разработки:
+   ```bash
+   npm start
+   ```
+   Приложение будет доступно по адресу: [http://localhost:3000](http://localhost:3000).
+5. Для продакшен-сборки:
+   ```bash
+   npm run build
+   ```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Демо
+Рабочая версия проекта доступна на хостинге: [ссылка на демо](#) *(замените на актуальную ссылку после деплоя, например, на Vercel, Netlify или GitHub Pages)*.
 
-### `npm test`
+## Пример данных
+Компонент принимает пропсы `title` и `topics`. Пример входных данных:
+```json
+{
+    "title": "История компании",
+    "topics": [
+        {
+            "name": "Этап 1",
+            "startYear": 2010,
+            "endYear": 2012,
+            "events": [
+                { "year": 2010, "name": "Основание компании" },
+                { "year": 2011, "name": "Запуск первого продукта" }
+            ]
+        },
+        {
+            "name": "Этап 2",
+            "startYear": 2013,
+            "endYear": 2015,
+            "events": [
+                { "year": 2013, "name": "Открытие офиса" },
+                { "year": 2014, "name": "Партнёрство с крупным брендом" }
+            ]
+        },
+    ]
+}
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Обо мне
+Меня зовут Смердов Никита, я фронтенд-разработчик с опытом более 3 лет в компании ВДело — инвестиционной платформе для выдачи займов бизнесу от частных инвесторов,
+выпуска акций, УЦП и других цифровых решений. Занимался разными задачами от создания адаптивных интерфейсов и лендингов с сложными анимациями до реализации систем
+генерации документов, подписания документов электронными подписями (ЭЦП), интеграции со сторонними API, CRM с аналитикой, графиками, таблицами, обеспечивая удобство
+и безопасность. Дополнительно развивал мобильные приложения на Flutter, React Native, поддерживал PWA и другие проекты платформы.
 
-### `npm run build`
+### Контактные данные
+- **Email**: [sme.nik.dov@gmail.com](mailto:sme.nik.dov@gmail.comm)
+- **Telegram**: [@smenikdov](https://t.me/smenikdov)
+- **Резюме на hh.ru**: [Frontend-разработчик](https://hh.ru/resume/fb1e52e0ff0e6e1c130039ed1f7937726b7030)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Портфолио
+- [Инвестиционная платформа ВДело](https://vdelo.pro) — онлайн платформа для привлечения инвестиций
+- [Свердловских областной фонд предпринимательства](https://sofp.ru) — региональный институт развития, созданный в 2002 году Правительством Свердловской области для финансового обеспечения развития малого и среднего бизнеса
+- [Креативный кластер Домна](https://domna.pro) — опорная организация по развитию креативных индустрий в регионе
+- [Старт Инвестиции](https://start-investment.pro) — инвестиционная платформа
+- [Инвестмен](https://investmen.pro) — безопасное инвестирование и займы для бизнеса на одной платформе
+- [Инвестра](https://инвестра.рф) — инвестиционная платформа
