@@ -1,0 +1,44 @@
+@use 'src/styles/variables' as v;
+@use 'src/styles/mixins' as m;
+@use 'src/styles/media-query' as media;
+
+.title {
+    font-size:    56px;
+    line-height:  1.2;
+    font-weight:  700;
+    padding-left: 80px;
+    position:     relative;
+
+    &::after {
+        @include    m.absolute(0, auto, auto, 0);
+        content:    '';
+        display:    block;
+        width:      5px;
+        height:     100%;
+        background: linear-gradient(180deg, v.$blue 0%, v.$pink 100%);
+    }
+}
+
+@include media.xl {
+    .title {
+        font-size:    32px;
+        padding-left: 50px;
+
+        &::after {
+            display: none;
+        }
+    }
+}
+
+@include media.md {
+    .title {
+        font-size: 26px;
+    }
+}
+
+@include media.sm {
+    .title {
+        font-size:    20px;
+        padding-left: 0;
+    }
+}
