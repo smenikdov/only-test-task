@@ -169,7 +169,11 @@
             scale:            0.13;
         }
 
-        &.timelinePointActive, &:hover {
+        &:focus {
+            outline: none;
+        }
+
+        &.timelinePointActive, &:hover, &:focus {
             .timelinePointIndex {
                 background-color: v.$white-grey;
                 scale:            1;
