@@ -1,1 +1,1 @@
-export const ANGLE_OFFSET = 45;
+export const ANGLE_OFFSET = 60;
