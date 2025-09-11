@@ -21,6 +21,7 @@ const TimelinePoint: React.FC<TimelinePointProps> = React.memo((props) => {
             )}
             style={{ transform: `translate(${x}px, ${y}px)`, rotate: `${globalAngle}deg` }}
             aria-label={`Перейти к событию «${name}»`}
+            title={`Перейти к событию «${name}»`}
             onClick={onClick}
         >
             <div className={styles.timelinePointIndex} style={{ rotate: `${-globalAngle}deg` }}>
