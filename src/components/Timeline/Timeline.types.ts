@@ -1,4 +1,4 @@
-import type { TimelineTopic } from '../../types';
+import type { TimelineTopic, TimelineEvent } from '../../types';
 
 export interface TimelinePointProps {
     name: string;
@@ -14,3 +14,6 @@ export interface TimelineProps {
     topics: TimelineTopic[];
 }
 
+export interface TimelineSwiperProps {
+    events: TimelineEvent[];
+}
